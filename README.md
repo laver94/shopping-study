@@ -1,1 +1,1 @@
-# shopping-study
+# shopping-study - 스프링 3.0, 타임리프, 스프링 시큐리티, oauth2 적용중
