@@ -21,7 +21,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Getter
-public class CustomUserDetail extends User implements UserDetails, OAuth2User {
+public class CustomUserDetail implements UserDetails, OAuth2User {
 
   private User user;
   private Map<String, Object> attributes;
@@ -80,7 +80,7 @@ public class CustomUserDetail extends User implements UserDetails, OAuth2User {
 
   @Override
   public String getName() {
-    return getFirstName();
+    return user.getFirstName();
   }
 
   @Override

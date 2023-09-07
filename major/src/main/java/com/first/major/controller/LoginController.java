@@ -3,6 +3,7 @@ package com.first.major.controller;
 import com.first.major.domain.User;
 import com.first.major.domain.UserRole;
 import com.first.major.dto.UserDTO;
+import com.first.major.global.GlobalData;
 import com.first.major.repository.RoleRepository;
 import com.first.major.repository.UserRepository;
 import com.first.major.repository.UserRoleRepository;
@@ -18,6 +19,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import static com.first.major.global.GlobalData.*;
+
 @Controller
 @RequiredArgsConstructor
 public class LoginController {
@@ -29,7 +32,7 @@ public class LoginController {
 
   @GetMapping("/login")
   public String login() {
-
+    cart.clear();
     return "login";
   }
 

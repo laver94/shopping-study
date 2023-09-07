@@ -3,6 +3,7 @@ package com.first.major.global;
 import com.first.major.domain.Product;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class GlobalData {
